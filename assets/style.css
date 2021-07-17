@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clear {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+.div {
+    margin: 0;
+}
+
+body, html {
+    color: #777;
+    line-height: 1.8;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.ps-8 {
+   padding: 0 8px;
+}
+.col-6 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 8px;
+    margin: 8px 0;
+}
+
+.col-4 {
+    width: 33.3333%;
+    padding: 0 16px;
+}
+
+.col-8 {
+    padding: 0 16px;
+
+    width: 66.6666%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.input--form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.w-1 {
+    width: 100%;
+}
+.col {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* bg-white box-shadow */
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bx-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* header */
+#header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;;  
+}
+
+#header .mobile-menu {
+    display: none;
+}
+
+.nav-left {
+    display: inline-block;
+    float: left;
+}
+
+.nav-right {
+    display: inline-block;
+    float: right;
+}
+
+.nav-right a {
+    float: left;
+}
+
+.nav-left a {
+    float: left;
+}
+
+#header a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #777;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#header a:hover {
+    background-color: #ccc;
+}
+
+/* slider */
+.slider {
+    background:url('./images/parallax1.jpg') center/cover no-repeat;
+    min-height: 400px;
+    position: relative;
+    opacity: 0.75;
+    background-attachment: scroll;
+}
+
+.web-logo {
+    padding: 12px 24px;
+    color: #fff;
+    letter-spacing: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+}
+/* about-section */
+.section {
+    padding: 64px 16px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.section-heading {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.section-subheading {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.about-section {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.author-name {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.about-skill {
+    padding: 16px 0;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.skill-name {
+    margin: 15px 0;
+    letter-spacing: 10px;
+}
+
+.total-per {
+    position: relative;
+    height: 36.67px;
+    background-color: #ddd;
+}
+
+.skill-per {
+    position: absolute;
+    padding: 4px 8px;
+    background-color: #616161;
+    text-align: center;
+    color: #fff;
+}
+/* product */
+.product-list {
+    background-color: #616161;
+    padding: 16px 0;
+}
+
+.product-item {
+    width: 25%;
+    text-align: center;
+    margin: 16px 0;
+    color: #fff;
+    float: left;
+}
+
+.product-number {
+    font-size: 24px;
+}
+/* banner */
+#portfolio {
+    background: url(./images/parallax2.jpg) center/cover no-repeat;
+    min-height: 400px;
+    opacity: 0.75;
+    position: relative;
+}
+
+#contact {
+    background: url(./images/parallax3.jpg) center/cover no-repeat;
+    min-height: 400px;
+    opacity: 0.75;
+    position: relative;
+}
+
+.portfolio-heading, .contact-heading {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 10px;
+    position: absolute;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* my work */
+.img-work img {
+    display: block;
+}
+
+.load-btn {
+    margin-top: 64px;
+    padding: 12px 24px;
+    background-color: #ddd;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.load-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.send-btn {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    margin:16px 0;
+    float: right;
+}
+.send-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.mobile-home {
+    display: inline-block;
+}
+@media  (max-width:739px) {
+    .col-6, .product-item {
+        width: 100%;
+    }
+    .website {
+        display: none;
+    }
+    .col-3,.col-4,.col-8 {
+        width: 100%;
+    }
+    .nav-left {
+        display: none;
+    }
+}
